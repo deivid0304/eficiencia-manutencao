@@ -1,39 +1,39 @@
 
-# ⚙️ Análise de Eficiência da Manutenção com Python
+# 📊 Análise de Eficiência da Manutenção em Turbinas Eólicas
 
-Projeto de análise de dados de manutenção em ativos de um parque eólico, com foco em:
+Este projeto tem como objetivo analisar a eficiência das manutenções realizadas em turbinas eólicas, utilizando dados de tempo parado, custos e tipos de manutenção para gerar insights relevantes.
 
-- 🔍 Identificação de padrões de falha
-- 📉 Cálculo de indicadores como MTTR (Mean Time To Repair)
-- 📊 Visualização de custos por tipo de manutenção
-- 💡 Geração de insights para tomada de decisão
+## 📁 Estrutura dos Dados
 
-## 📁 Tecnologias utilizadas
+O dataset `manutencao_turbinas.csv` contém os seguintes campos:
 
-- Python (pandas, seaborn, matplotlib)
-- Dataset fictício de manutenções
+- `Data`: Data da ocorrência da manutenção
+- `Equipamento`: Nome da turbina eólica
+- `Tipo`: Tipo da manutenção (Corretiva, Preditiva, Preventiva)
+- `Tempo_Parado_Horas`: Tempo total de inatividade
+- `Custo`: Custo da intervenção
 
-## 📊 Exemplos de Gráficos
+## 📈 Análises Realizadas
 
-- MTTR por Equipamento
-- Distribuição de Custo por Tipo de Manutenção
+1. **MTTR por Equipamento**
+2. **Distribuição de Custo por Tipo de Manutenção**
+3. **Evolução Mensal do MTTR**
+4. **Top 5 Equipamentos por Custo Total**
+5. **Correlação entre Tempo Parado e Custo**
 
-## ▶️ Executando o Projeto
+## 🛠 Tecnologias Utilizadas
 
-1. Instale as dependências:
+- Python 3.11
+- Pandas
+- Matplotlib
+- Seaborn
+- python-docx
+
+## 📄 Relatório Técnico
+
+Um relatório técnico em `.docx` será gerado automaticamente contendo todas as análises com explicações.
+
+## 📌 Execução
 
 ```bash
-pip install pandas matplotlib seaborn
-```
-
-2. Execute o script:
-
-```bash
-python src/analise_manutencao.py
-```
-
-Os gráficos serão salvos na pasta `/images`.
-
-## 📌 Objetivo
-
-Ajudar times de manutenção a entender melhor a eficiência das intervenções com dados reais ou simulados.
+python analise_manutencao.py
