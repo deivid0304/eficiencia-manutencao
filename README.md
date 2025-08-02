@@ -1,26 +1,39 @@
-# Análise de Eficiência da Manutenção
 
-Projeto em Python que utiliza a biblioteca Pandas para analisar a eficiência de manutenções corretivas e preventivas.
+# ⚙️ Análise de Eficiência da Manutenção com Python
 
-## 🔍 O que é analisado?
+Projeto de análise de dados de manutenção em ativos de um parque eólico, com foco em:
 
-- Frequência de falhas por tipo de manutenção
-- Média de tempo de parada (MTTR)
-- Custos simulados por tipo de falha
-- Visualização com Matplotlib
+- 🔍 Identificação de padrões de falha
+- 📉 Cálculo de indicadores como MTTR (Mean Time To Repair)
+- 📊 Visualização de custos por tipo de manutenção
+- 💡 Geração de insights para tomada de decisão
 
-## 📁 Arquivos
+## 📁 Tecnologias utilizadas
 
-- `eficiencia_manutencao.py` — Script principal
-- `dados_manutencao.csv` — Base de dados simulada
+- Python (pandas, seaborn, matplotlib)
+- Dataset fictício de manutenções
 
-## 🛠️ Tecnologias
+## 📊 Exemplos de Gráficos
 
-- Python
-- Pandas
-- Matplotlib
+- MTTR por Equipamento
+- Distribuição de Custo por Tipo de Manutenção
 
-## 💡 Autor
+## ▶️ Executando o Projeto
 
-Deivid Ferreira
-        
+1. Instale as dependências:
+
+```bash
+pip install pandas matplotlib seaborn
+```
+
+2. Execute o script:
+
+```bash
+python src/analise_manutencao.py
+```
+
+Os gráficos serão salvos na pasta `/images`.
+
+## 📌 Objetivo
+
+Ajudar times de manutenção a entender melhor a eficiência das intervenções com dados reais ou simulados.
